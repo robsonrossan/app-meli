@@ -190,19 +190,20 @@ curl --location --request DELETE 'http://localhost:8080/produtos/1'
 ## ❌ 400 — Erro de Validação
 ```json
 {
-  "status": 400,
-  "errors": [
-    "O título é obrigatório",
-    "O preço deve ser maior que zero"
-  ]
+    "errors": {
+        "titulo": "O título é obrigatório"
+    },
+    "timestamp": "2025-12-09T16:33:13.9982636",
+    "status": 400
 }
 ```
 
 ## ❌ 404 — Recurso Não Encontrado
 ```json
 {
-  "status": 404,
-  "erro": "Produto não encontrado"
+    "erro": "Produto não encontrado",
+    "timestamp": "2025-12-09T16:31:59.1285341",
+    "status": 404
 }
 ```
 
